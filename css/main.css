@@ -1,0 +1,36 @@
+.description{
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 400;
+  border: 0;
+  margin-top: 0;
+}
+.main{
+  margin-top: 100px;
+}
+.links > a{
+  padding:10px; 
+  margin: 10px;
+    
+}
+.example{
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: .3em;
+  border-bottom: 1px solid #DDD;
+  padding-bottom: .2em;
+  font-size: 1.8em;
+}
+.img-example{
+  border-bottom: 0;
+  height: 220px;
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 220px;
+}
+footer{
+  margin: 50px;
+  border-top:  1px solid #DDD;
+
+}
