@@ -79,8 +79,8 @@ $(document).ready(function() {
 
 #### A) Se visualiza las imagenes sin titulo 
 
-![imagen1](assets/docs/sinPlugin.png)
+![imagen1](public/assets/docs/sinPlugin.png)
 
 #### B) Por medio del botón activamos el plugin, de la cual se visualiza cada imagen con su respectivo título.
 
-![imagen2](assets/docs/conPlugin.png)
+![imagen2](public/assets/docs/conPlugin.png)
