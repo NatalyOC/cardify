@@ -51,4 +51,4 @@ $(container).cardify({});
 
 ## Ejemplos
 
-...
+![](assets/images/cardify.png)
