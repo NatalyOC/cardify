@@ -1,3 +1,11 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
 .description{
   font-size: 22px;
   line-height: 1.2;
@@ -33,4 +41,7 @@ footer{
   margin: 50px;
   border-top:  1px solid #DDD;
 
+}
+header{
+  margin: 20px;
 }
