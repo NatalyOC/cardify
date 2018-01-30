@@ -10,12 +10,9 @@
         .each(function() {  
           // wrap, envuelve c/u de los elementos seleccionado (img's) en un </figure>	    	           
           $(this).wrap('<figure></figure>');
-          var alt = $(this).attr('alt');
           // after, inserta su contenido al elemento </figure>
-          $(this).after('<figcaption class="style-img">' + alt + '</figcaption>');       
-        }) 
+          $(this).after('<figcaption class="style-img">' + $(this).attr('alt') + '</figcaption>');       
+	    });  
 	  }  
   });
 })(jQuery);
-
-

@@ -1,5 +1,1 @@
-$(document).ready(() =>{
-  $('#addPlugin').one('click', () => {
-    $('#container').cardify();
-  });
-});
+$(container).cardify({});
