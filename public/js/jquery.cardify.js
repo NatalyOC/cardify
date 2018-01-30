@@ -13,7 +13,7 @@
           var alt = $(this).attr('alt');
           // after, inserta su contenido al elemento </figure>
           $(this).after('<figcaption class="style-img">' + alt + '</figcaption>');       
-        }) 
+        });
 	  }  
   });
 })(jQuery);

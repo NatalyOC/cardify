@@ -1,10 +1,16 @@
 .style-img {
-  transform: translateY(-200%);
+  vertical-align: middle;
   text-align: center;
   font-size: 1rem;
-  color: transparent;
+  color: red;
 }
 
 img {
   width: 100%;
+}
+.style-fig{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
