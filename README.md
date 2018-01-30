@@ -41,13 +41,9 @@ Cardify es un Plugin de Jquery liviano que te permite implementar un efecto hove
 ```js
 // `container` es el selector del contenedor donde se buscarán todas las
 // imágenes a ser procesadas.
-$(document).ready(function() {
-  $('#addPlugin').one('click', function() {
     $('#container').cardify();
-  });
-});
-``
-## Snippets
+```
+## Ejemplo
 
 + html
 ```html
@@ -59,23 +55,15 @@ $(document).ready(function() {
 
 + js
 ```js
-(function($) {
-  $.fn.extend({
-    cardify: function() {
-      $('img').each(function() {
-        let pathSrc = $(this).attr('src');
-        let pathAlt = $(this).attr('alt');
-        let replace = `<figure><img src=${pathSrc}><figcaption>${pathAlt}</figcaption></figure>`;
-        $(this).replaceWith(replace);
-      });
-    }
-  });       
-})(jQuery);
+$(document).ready(function() {
+  $('#btn-plugins').on('click',function() {
+    $('container-img').cardify();
+  });  
+});
 ````
 
 *** 
-
-## Ejemplo del plugin
+## Demo
 
 #### A) Se visualiza las imagenes sin titulo.
 
