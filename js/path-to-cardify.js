@@ -4,7 +4,8 @@
       $('img').each(function() {
         let pathSrc = $(this).attr('src');
         let pathAlt = $(this).attr('alt');
-        let replace = `<figure class="image-frame"><img src=${pathSrc}><figcaption class="image-caption"><h5>${pathAlt}</h5></figcaption></figure>`;
+        let pathClass = $(this).attr('class');
+        let replace = `<figure class="image-frame"><img src=${pathSrc} class=${pathClass}><figcaption class="image-caption"><h5>${pathAlt}</h5></figcaption></figure>`;
         $(this).replaceWith(replace);
       });
       $('.image-frame').hover(function() {
