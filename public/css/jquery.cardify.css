@@ -3,6 +3,7 @@ img {
 }
 
 .style-img {
+  display: none;
   position: relative;
   top: -80px;
   text-align: center;
@@ -10,4 +11,5 @@ img {
   background-color: rgba(4,8,2,0.4);
   font-size: 1.5rem;
   color: white;
+  
 }
