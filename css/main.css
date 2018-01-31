@@ -46,3 +46,31 @@ footer{
 header{
   margin: 20px;
 }
+.image-frame {
+  border: 3px solid #eee;
+  float: left;
+  /* height: 240px; */
+  margin: 0 9px 9px 0;
+  overflow: hidden;
+  position: relative;
+ /*  width: 310px; */
+}
+.image-frame:hover {
+	border: 3px solid #d7af42;
+}
+
+.image-frame .image-caption {
+	display: none;
+	opacity: 0.8;
+  background:#898989;
+  height: 100%;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+  padding: 5px;
+  text-align: center;
+  font-size: 2.3em;
+  font-weight: bold;
+  background-color: rgba(15, 15, 15, 0.6);
+  color: #fff;
+}
