@@ -2,7 +2,7 @@
 
 ### Reto-Laboratoria
 
-Realizar un plugin que permita mostrar el atributo `alt` en ves de la imagen (`img`) en hover.
+Realizar un plugin que permita mostrar el atributo `alt` en vez de la imagen (`img`) en hover.
 * Duración: 10 días
 
 ## Integrantes
@@ -39,7 +39,7 @@ Para está etapa, usamos la herramienta _trello_, facilitando la organización d
 ### 2. Archivos importantes dentro de la estructura del proyecto:
 
 * __README.md__, descripción del pluggin, instrucciones de instalación, uso y documentación del API.
-* __jquery.cardify.js__: libreria a exportar una función u objeto al entorno global (window)
+* __jquery.cardify.js__: librería a exportar una función u objeto al entorno global (window)
 * __index.html__: página web de la librería con ejemplo.
 * __package.json__: con nombre, versión, descripción, autores, licencia, dependencias, scripts (pretest, test, ...)
 * __.eslintrc__: es una guía de estilo de JavaScript.
