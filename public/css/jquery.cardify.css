@@ -2,28 +2,19 @@ img {
   width: 100%;
 }
 .image-frame {
-  border: 3px solid rgba(238, 238, 238, 0);
-  float: left;
-  margin: 0 9px 9px 0;
   overflow: hidden;
   position: relative;
 }
-.image-frame:hover {
-	border: 3px solid #d7af42;
-}
 
-.image-frame .image-caption {
+.image-caption {
 	display: none;
-	opacity: 0.8;
-  background:#898989;
   height: 100%;
 	width: 100%;
-	position: absolute;
+  position: absolute;
 	bottom: 0px;
-  padding: 5px;
   text-align: center;
-  font-size: 2.3em;
-  font-weight: bold;
+  /* transform: translateY(1.5in); */
+  font-size:1.5em;
   background-color: rgba(15, 15, 15, 0.6);
   color: #fff;
 }
