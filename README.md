@@ -26,106 +26,143 @@ Para está etapa, usamos la herramienta _trello_, facilitando la organización d
 ![trello-semana1](public/assets/docs/trello-semana-1.png)
 ![trello-semana2](public/assets/docs/trello-semana-2.png)
 
-## Desarrollo
+## Etapa de desarrollo
 
 ### 1. Herramientas:
 
-* _HTML5_
-* _CSS3_
-* _jQuery_, versión 3
-* Bootstrap 4.0
-* La sintaxis de nuestro código está en ECMAScript 6 (ES-6), sin embargo no todos los navegadores permite leerlo, por ello utilizamos _BABEL_, para transformar la sintaxis del código de ES-6 a ES-5.
+* __HTML5__
+* __CSS3__
+* __jQuery-3__
+* __Bootstrap 4.0__ (usado solo en el demo, mas no en el plugin).
+* La sintaxis de nuestro código está en ECMAScript 6 (ES-6), sin embargo no todos los navegadores permite leerlo, por ello utilizamos __BABEL__, para transformar la sintaxis del código de ES-6 a ES-5.
 
-### 2. Estructura de nuestros archivos: 
+### 2. Archivos importantes dentro de la estructura del proyecto:
 
+* __README.md__, descripción del pluggin, instrucciones de instalación, uso y documentación del API.
+* __jquery.cardify.js__: libreria a exportar una función u objeto al entorno global (window)
+* __index.html__: página web de la librería con ejemplo.
+* __package.json__: con nombre, versión, descripción, autores, licencia, dependencias, scripts (pretest, test, ...)
+* __.eslintrc__: es una guía de estilo de JavaScript.
+* __.gitignor__: para ignorar archivos que no deban incluirse en control de versiones (git).
+* __.babelrc__: transformar la sintaxis del código de ES-6 a ES-5.
 
+En la siguiente imagen es una referencia de la estructura de carpetas de los archivos.
 
+![estructura-carpetas](public/assets/docs/estructura.PNG)
 
- Cardigy es un plugin de Jquery liviano que te permite implementar un efecto _hover_ a tus imágenes 
+### 3. Código JavaScript del Plugin: 
 
-Cardify es un Plugin de Jquery liviano que te permite implementar un efecto hover a tus imágenes con estilo. Es fácil de usar con un diseño sencillo y se ajustará a tus necesidades, esto lo pueden usar desarrolladores y diseñadores.
+ ```js
+ (function($) {
+  $.fn.extend({ 
+	  cardify: function() {  
+      var container = $('#container');
+      container.find('img')
+        .each(function() {     	           
+          $(this).wrap('<figure class="image-frame"></figure>');
+          $(this).after('<figcaption class="image-caption">' + $(this).attr('alt') + '</figcaption>');       
+        });  
+      $('.image-frame').hover(function() {
+        console.log($(this));
+        $('.image-caption', this).slideToggle('slow');
+      }, function() {
+        $('.image-caption', this).slideToggle('slow');
+      });
+	  }  
+  });
+})(jQuery);
 
+ ```
+### 4. Código CSS del Plugin: 
 
-Cardify es un Plugin de Jquery liviano que te permite buscar todos tus elementos `img` que se encuentro en un contenedor específico y crear el elemento `figure` para cada uno de tus imagenes, además de añadir un `figcaption` con el texto del atributo alt de tu imagen.
-## Integrantes
+ ```css
+img {
+  width: 100%;
+}
+.image-frame {
+  overflow: hidden;
+  position: relative;
+}
 
-* Nataly Otero Celis.
-*  Jessica Meza
+.image-caption {
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  font-size:1.5em;
+  background-color: rgba(15, 15, 15, 0.6);
+  color: #fff;
+}
+ ```
+## Presentación del plugin _CARDIFY_:
 
-## Herramientas
+> Cardify es un plugin de jQuery liviano que muestra el atributo `alt` de la imagen al hacer el efecto _hover_. 
 
-* Jquery.
-* Bootstrap 4.0
-* HTML5.
-* CSS3.
+### ¿En qué consiste?
 
+__Cardify__ consiste en buscar todos tus elementos `img` que se encuentra en un contenedor específico y crear el elemento `figure` a cada uno de tus imagenes, además de añadir un `figcaption` con el texto del atributo alt de tu imagen, este se mostrará cuando el usuario pase el mouse encima de la figura.
+### ¿Cómo usarlo?
 
-## Instalación
-1. Cargue la última biblioteca de jQuery (se recomienda una versión delgada) y el plugins jquery.cardify.js con su respectivo archivo css en el documento html.
-2. Simplemente llame a la función principal del plugins en el elemento de destino y listo.
+#### **1. Instalación**
 
-### Global (navegador)
+Archivos a descargar:
+* jquery-3.2.1.min.js
+* jquery.cardify.css
+* jquery.cardify.js
+
+Está es la estructura del index.html para ejecutar el plugin.
 
 ```html
-<link rel="stylesheet" href="css/jquery.cardify.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="js/jquery.cardify.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/jquery.cardify.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body >
+
+  <!-- Aqui va la estructura de la página de cada desarrollador -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  
+  <script src="js/jquery.cardify.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
 ```
 
-## Uso
+#### **2. Uso**
+
+Para hacer uso del plugin _cardify_, simplemente se deberá colocar en tu archivo javaScript, lo siguiente:
 
 ```js
 // `container` es el selector del contenedor donde se buscarán todas las
 // imágenes a ser procesadas.
-    $('#container').cardify();
+  $(container).cardify({});
 ```
-## Ejemplo
 
-+ html
+#### **3. Ejemplo**
+
+_Observación_: las imagenes que desea hacer uso del plugin debe estar dentro de un elemento con el ID _container_ y debe colocar un nombre y/o descripción en el `alt`.
+
+Este es un ejemplo de como el desarrollar colocará sus imagenes.
+
 ```html
- <div class="container-img">
-    <img src="" alt="" class="">
-    <img src="" alt="" class="">
- </div>
+<div id="container">
+  <img src="ejemplo-imagen-1.jpg" alt="nombre-img1">
+  <img src="ejemplo-imagen-2.jpg" alt="nombre-img2">
+  <img src="ejemplo-imagen-3.jpg" alt="nombre-img3"> 
+</div>
 ```
 
-+ js
-```js
-$(document).ready(function() {
-  $('#btn-plugins').on('click',function() {
-    $('container-img').cardify();
-  });  
-});
-```
-***
-***
+#### **4. Demo**
 
-### Planificacion
+Este es el link del demo: https://natalyoc.github.io/cardify/public/index.html
 
-Semana 1 - Semana 3
-24 Enero
-- Formación de Equipo.
-- Investigación sobre los casos para la elección del Reto.
+* Así se visualiza la imagen al pasar el mouse encima de la figura.
 
-26 Enero
-- Hacer fork de reto propuesto, el reto elegido fue el 2 <Cardify>.
-- Se coordino realizar versión para plugins.
+![imagen1](public/assets/docs/ejemplo.png)
 
-28 Enero
-- Creación de issues.
-- Inicializando proyecto e implementando requisitos.
-- Creación de versiones del plugins.
 
-29 Enero
-- Se subió a la rama master la implementación del Reto.
-
-*** 
-## Demo
-
-#### A) Se visualiza las imágenes sin título.
-
-![imagen1](public/assets/docs/sinPlugin.png)
-
-#### B) Por medio del botón activamos el plugin, de la cual se visualiza cada imagen con su respectivo título al pasar el mouse por la imagen.
-
-![imagen2](public/assets/docs/conPlugin.png)

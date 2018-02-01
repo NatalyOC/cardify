@@ -1,5 +1,5 @@
 'use strict';
 
 $(document).ready(function() {
-  $(container).cardify();
+  $(container).cardify({});
 });

@@ -13,8 +13,8 @@ img {
   position: absolute;
 	bottom: 0px;
   text-align: center;
-  /* transform: translateY(1.5in); */
   font-size:1.5em;
+  padding-top: 100px;
   background-color: rgba(15, 15, 15, 0.6);
   color: #fff;
 }
