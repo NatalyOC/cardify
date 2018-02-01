@@ -112,6 +112,10 @@ Archivos a descargar:
 * jquery.cardify.css
 * jquery.cardify.js
 
+__IMPORTANTE__ Aquí puedes _descargar_ los archivos _jquery.cardify.js_ y _jquery.cardify.css_ del plugin.
+
+https://drive.google.com/drive/folders/1TPfP9c3_I_1ynnlb_55HHUlEBlanLE7i?usp=sharing
+
 Está es la estructura del index.html para ejecutar el plugin.
 
 ```html
