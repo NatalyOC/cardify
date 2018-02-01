@@ -1,31 +1,24 @@
 # Cardify
-***
 
 
-Cardify es un Plugin de Jquery liviano que te permite implementar un efecto hover a tus imagenes con estilo. Es facil de usar con un diseño sencillo y se ajustará a tus necesidades, esto lo pueden usar desarrolladores y diseñadores.
-
+Cardify es un Plugin de Jquery liviano que te permite implementar un efecto hover a tus imágenes con estilo. Es fácil de usar con un diseño sencillo y se ajustará a tus necesidades, esto lo pueden usar desarrolladores y diseñadores.
 
 ## Integrantes
-
 
 * Nataly Otero Celis.
 *  Jessica Meza
 
-
 ## Herramientas
-
 
 * Jquery.
 * Bootstrap 4.0
 * HTML5.
 * CSS3.
 
-***
 
 ## Instalación
 1. Cargue la última biblioteca de jQuery (se recomienda una versión delgada) y el plugins jquery.cardify.js con su respectivo archivo css en el documento html.
 2. Simplemente llame a la función principal del plugins en el elemento de destino y listo.
-
 
 ### Global (navegador)
 
@@ -62,28 +55,30 @@ $(document).ready(function() {
 ```
 ***
 ***
+
 ### Planificacion
+
 Semana 1 - Semana 3
 24 Enero
 - Formación de Equipo.
-- Investigacion sobre los casos para la elección del Reto.
+- Investigación sobre los casos para la elección del Reto.
 
 26 Enero
-- Hacer fork de reto propuesto, se elegio el reto 2: Cardify.
-- Se coordino realizar version para plugins.
+- Hacer fork de reto propuesto, el reto elegido fue el 2 <Cardify>.
+- Se coordino realizar versión para plugins.
 
 28 Enero
-- Creacion de issues.
+- Creación de issues.
 - Inicializando proyecto e implementando requisitos.
-- Creacion de versiones del plugins.
+- Creación de versiones del plugins.
 
 29 Enero
-- Se subio a la rama master la implementación del Reto.
+- Se subió a la rama master la implementación del Reto.
 
 *** 
 ## Demo
 
-#### A) Se visualiza las imagenes sin titulo.
+#### A) Se visualiza las imágenes sin título.
 
 ![imagen1](public/assets/docs/sinPlugin.png)
 
