@@ -4,18 +4,15 @@
       var container = $('#container');
       container.find('img')
         .each(function() {     	           
-          $(this).wrap('<figure></figure>');
+          $(this).wrap('<figure class="image-frame"></figure>');
           $(this).after('<figcaption class="image-caption">' + $(this).attr('alt') + '</figcaption>');       
-        });
-      $('figure').hover(
-        function() {
-          $('img', this).addClass('hover');
-          $('figcaption', this).addClass('hoverFig');
-        }, function() {
-          $('img', this).removeClass('hover');
-          $('figcaption', this).removeClass('hoverFig');
-        }
-      );
+        });  
+      $('.image-frame').hover(function() {
+        console.log($(this));
+        $('.image-caption', this).slideToggle('slow');
+      }, function() {
+        $('.image-caption', this).slideToggle('slow');
+      });
 	  }  
   });
 })(jQuery);
