@@ -53,7 +53,7 @@ $(document).ready(function() {
   });  
 });
 ```
-***
+
 ***
 
 ### Planificacion
@@ -82,6 +82,6 @@ Semana 1 - Semana 3
 
 ![imagen1](public/assets/docs/sinPlugin.png)
 
-#### B) Por medio del botón activamos el plugin, de la cual se visualiza cada imagen con su respectivo título al pasar el mouse por la imagen.
+#### B) Al pasar el mouse sobre la imagen muestra el Alt en vez de la imagen.
 
 ![imagen2](public/assets/docs/conPlugin.png)
