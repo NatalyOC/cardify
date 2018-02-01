@@ -1,16 +1,19 @@
-.style-img {
-  vertical-align: middle;
-  text-align: center;
-  font-size: 1rem;
-  color: red;
-}
-
 img {
   width: 100%;
 }
-.style-fig{
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
+
+.image-caption {
+  text-align: center;
+  font-size: 1.5em;
+  color: transparent;
+  position: relative;
+  transform: translateY(-1.5in)
+}
+
+.hover {
+  visibility: hidden;
+}
+
+.hoverFig {
+  color: blue;
 }
