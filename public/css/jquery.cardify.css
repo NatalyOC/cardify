@@ -1,0 +1,20 @@
+img {
+  width: 100%;
+}
+.image-frame {
+  overflow: hidden;
+  position: relative;
+}
+
+.image-caption {
+	display: none;
+  height: 100%;
+	width: 100%;
+  position: absolute;
+	bottom: 0px;
+  text-align: center;
+  font-size:1.5em;
+  padding-top: 100px;
+  background-color: rgba(15, 15, 15, 0.6);
+  color: #fff;
+}

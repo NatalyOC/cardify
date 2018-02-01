@@ -1,0 +1,27 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "Implementar un plugin de jQuery que dado un contenedor debe buscar todas las imágenes que encuentre dentro del contenedor y reemplazarlas por un nuevo elemento <figure> que contenga la imagen (<img>) además de un <figcaption> con el texto del atributo alt de la imagen.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d public/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatalyOC/cardify.git"
+  },
+  "keywords": [
+    "plugin",
+    "cardify"
+  ],
+  "author": "JessicaMeza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatalyOC/cardify/issues"
+  },
+  "homepage": "https://github.com/NatalyOC/cardify#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0"
+  }
+}
