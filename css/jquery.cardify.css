@@ -1,13 +1,22 @@
 img {
   width: 100%;
 }
-
-.style-img {
+.image-frame {
+  overflow: hidden;
   position: relative;
-  top: -80px;
-  text-align: center;
-  padding: 8px;
-  background-color: rgba(4,8,2,0.4);
-  font-size: 1.5rem;
-  color: white;
+}
+
+.image-caption {
+	display: none;
+  height: 100%;
+	width: 100%;
+  position: absolute;
+	bottom: 0px;
+  text-align: justify;
+  font-size:1.2em;
+  padding-top: 120px ;
+  padding-left:40px;
+  padding-right:40px;
+  background-color: rgba(15, 15, 15, 0.7);
+  color: #fff;
 }

@@ -9,29 +9,63 @@
   <link rel="stylesheet" href="css/jquery.cardify.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="container">
-  <br>
-  <div class="alert alert-success" role="alert">
-      <h1 class="text-center">Ejemplo del plugin Cardify</h1> <hr>
-    <p class="mb-0">Es un plugin de jQuery que dado un contenedor debe buscar todas las imágenes que encuentre dentro del contenedor y reemplazarlas por un nuevo elemento 'Figure' que contenga la imagen además de un 'figcaption' con el texto del atributo alt de la imagen.</p>
-  </div>
-  
-  <div class="row">
-    <div class="col-6 offset-3">
-      <button id="addPlugin" type="button" class="btn btn-info col-12">Añadir Plugin Cardify</button> <br><br>      
-      <div id="container">
-        <img src="https://www.petdarling.com/articulos/wp-content/uploads/2016/09/boyero-de-berna.jpg" alt="Nombre de la raza del perro 1">
-        <img src="https://www.aperrados.com/wp-content/uploads/2016/12/beagle-razas-de-perros-pequenos-y-medianos-para-ninos.jpg" alt="Nombre de la raza del perro 2">
-        <img src="https://animalesmascotas.com/wp-content/uploads/2014/09/razas-de-perros-ingleses-bobtail-600x399.jpg" alt="Nombre de la raza del perro 3">
-        <img src="https://comoadiestraraunperro.com/wp-content/uploads/2016/04/perro-de-raza-pug.jpg" alt="Nombre de la raza del perro 4">
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">Cardify-NatyJess</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Demo <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Documento</a>
+        <a class="nav-item nav-link" href="https://github.com/NatalyOC/cardify">Github</a>
       </div>
     </div>
-  </div>
-  
+  </nav>
+  <div class="container">
+    <br><br><br>
+    <div class="d-flex justify-content-between">
+      <h1>Plugin-Cardify, <small>más que un hover a tus imagenes</small></h1>
+      <a href="assets/docs/plugin-cardify.zip" class="btn btn-primary" style="margin-top: 10px"><strong>Descargar</strong> (1.0.0)</a>      
+    </div><hr>
+    <!-- introducción -->
+    <div class="row">
+      <div class="col">
+        <h2>Introducción</h2>
+        <p class="lead">Cardify es un plugin de jQuery liviano que muestra el atributo <code>&lt;alt&gt;</code> de la imagen al hacer el efecto hover.</p>
+        <p class="lead" >Consiste en buscar todos tus elementos <code>&lt;img&gt;</code> que se encuentra en un contenedor específico y crea el elemento <code>&lt;figure&gt;</code> a cada uno de sus imagenes, además de añadir un <code>&lt;figcaption&gt;</code> con el texto del atributo <code>alt</code> de su imagen, este se mostrará cuando el usuario pase el mouse encima de la figura.</p>
+      </div>
+    </div> 
+    <!-- demo -->
+    <div class="row">
+      <div class="col">
+        <h2>Demo</h2>
+          <h4>Imagenes</h4><br>
+          <div class="d-flex justify-content-around">
+            <div id="container">
+              <div class="columna">
+                  <img src="https://www.petdarling.com/articulos/wp-content/uploads/2016/09/boyero-de-berna.jpg" alt="Los POMERANOS son una raza amigable, alegre, amorosa y vivaz.​ Les encanta estar alrededor de sus propietarios.">
+                  <img src="https://www.aperrados.com/wp-content/uploads/2016/12/beagle-razas-de-perros-pequenos-y-medianos-para-ninos.jpg" alt="Los POMERANOS son una raza amigable, alegre, amorosa y vivaz.​ Les encanta estar alrededor de sus propietarios.">
+                  <img src="https://http2.mlstatic.com/hermosos-cachorros-pomerania-D_NQ_NP_817225-MCO25412038332_032017-F.jpg" alt="Los POMERANOS son una raza amigable, alegre, amorosa y vivaz.​ Les encanta estar alrededor de sus propietarios.">
+              </div>
+            </div>
+          </div>
+      <div class="col">
+        <h5>Código Fuente</h5>
+        <div class="highlight"><pre class="pre-scrollable"><code class="language-html" data-lang="html">      
+          <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"imagen1.png"</span><span class="na">alt=</span><span class="s">"nombre-imagen1"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"imagen2.png"</span><span class="na">alt=</span><span class="s">"nombre-imagen2"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"imagen3.png"</span><span class="na">alt=</span><span class="s">"nombre-imagen3"</span><span class="nt">&gt;</span>            
+          <span class="nt">&lt;/div&gt;</span>
+        </div>
+      </div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="js/jquery.cardify.js"></script>
-  <script src="../src/index.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
