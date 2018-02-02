@@ -101,6 +101,9 @@ img {
 ### ¿En qué consiste?
 
 __Cardify__ consiste en buscar todos tus elementos `img` que se encuentra en un contenedor específico y crear el elemento `figure` a cada uno de tus imagenes, además de añadir un `figcaption` con el texto del atributo alt de tu imagen, este se mostrará cuando el usuario pase el mouse encima de la figura.
+
+![img](public/assets/docs/explicacion.png)
+
 ### ¿Cómo usarlo?
 
 #### **1. Instalación**
