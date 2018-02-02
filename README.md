@@ -2,22 +2,21 @@
 
 ### Reto-Laboratoria
 
-Realizar un plugin que permita mostrar el atributo `alt` en vez de la imagen (`img`) en hover.
+Realizar un plugin que permita mostrar el atributo `alt` de la imagen al hacer el efecto _hover_.
+
 * Duración: 10 días
 
 ## Integrantes
-* Nataly Otero Celis.
-* Jessica Meza Rojas.
+* [Nataly Otero Celis.](https://github.com/NatalyOC)
+* [Jessica Meza Rojas.](https://github.com/jessica2011)
 
 ## Introducción
 El contenido de este `Readme.md`, está destinado a presentar de una forma sencilla la planificación, el desarrollo y resultado de nuestro plugin _Cardify_. Es decir dejar listo para que otros desarrolladores puedan seguir construyendo sus propias extensiones a partir de nuestro código.
 
 ## Objetivos
 
-* Lograr la funcionalidad de mostrar el atributo `alt` en ves de la imagen (`img`) en hover.
-
+* Lograr la funcionalidad del plugin.
 * Realizar un _DEMO_, con un ejemplo principal de uso.
-
 
 ## Etapa de planificación
 
@@ -43,7 +42,7 @@ Para está etapa, usamos la herramienta _trello_, facilitando la organización d
 * __index.html__: página web de la librería con ejemplo.
 * __package.json__: con nombre, versión, descripción, autores, licencia, dependencias, scripts (pretest, test, ...)
 * __.eslintrc__: es una guía de estilo de JavaScript.
-* __.gitignor__: para ignorar archivos que no deban incluirse en control de versiones (git).
+* __.gitignore__: para ignorar archivos que no deban incluirse en control de versiones (git).
 * __.babelrc__: transformar la sintaxis del código de ES-6 a ES-5.
 
 En la siguiente imagen es una referencia de la estructura de carpetas de los archivos.
@@ -95,7 +94,7 @@ img {
   color: #fff;
 }
  ```
-## Presentación del plugin _CARDIFY_:
+## Presentación del plugin _CARDIFY_ versión 1.0.0:
 
 > Cardify es un plugin de jQuery liviano que muestra el atributo `alt` de la imagen al hacer el efecto _hover_. 
 
@@ -111,9 +110,10 @@ Archivos a descargar:
 * jquery.cardify.css
 * jquery.cardify.js
 
-__IMPORTANTE__ Aquí puedes _descargar_ los archivos _jquery.cardify.js_ y _jquery.cardify.css_ del plugin.
+> __IMPORTANTE__ Aquí puedes [Descargar](https://drive.google.com/drive/folders/1TPfP9c3_I_1ynnlb_55HHUlEBlanLE7i?usp=sharing
+) los archivos _jquery.cardify.js_ y _jquery.cardify.css_ del plugin.
 
-https://drive.google.com/drive/folders/1TPfP9c3_I_1ynnlb_55HHUlEBlanLE7i?usp=sharing
+
 
 Está es la estructura del index.html para ejecutar el plugin.
 
@@ -148,7 +148,7 @@ Para hacer uso del plugin _cardify_, simplemente se deberá colocar en tu archiv
 
 #### **3. Ejemplo**
 
-_Observación_: las imagenes que desea hacer uso del plugin debe estar dentro de un elemento con el ID _container_ y debe colocar un nombre y/o descripción en el `alt`.
+> __Observación__: las imagenes que desea hacer uso del plugin debe estar dentro de un elemento con el ID _container_ y debe colocar un nombre y/o descripción en el `alt`.
 
 Este es un ejemplo de como el desarrollar colocará sus imagenes.
 
@@ -162,7 +162,7 @@ Este es un ejemplo de como el desarrollar colocará sus imagenes.
 
 #### **4. Demo**
 
-Este es el link del demo: https://natalyoc.github.io/cardify/public/index.html
+Link del [Demo](https://natalyoc.github.io/cardify/public/index.html) 
 
 * Así se visualiza la imagen al pasar el mouse encima de la figura.
 
