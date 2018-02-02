@@ -1,18 +1,18 @@
 (function($) {
   $.fn.extend({ 
-    // nombramos nuestro plugin (cardify)
-	  cardify: function() {  
-      // Guardo en una variable el elemento que contenga el id container
-      var container = $('#container');	
-      // find, busca dentro del container el elemento img
+    cardify: function() {  
+      let container = $('#container');
       container.find('img')
-        // each, recorro todos los elementos img para que ejecute la sgte función
-        .each(function() {  
-          // wrap, envuelve c/u de los elementos seleccionado (img's) en un </figure>	    	           
-          $(this).wrap('<figure></figure>');
-          // after, inserta su contenido al elemento </figure>
-          $(this).after('<figcaption class="style-img">' + $(this).attr('alt') + '</figcaption>');       
-	    });  
-	  }  
+        .each(function() {     	           
+          $(this).wrap('<figure class="image-frame"></figure>');
+          $(this).after('<figcaption class="image-caption">' + $(this).attr('alt') + '</figcaption>');       
+        });  
+      $('.image-frame').hover(function() {
+        console.log($(this));
+        $('.image-caption', this).slideToggle('slow');
+      }, function() {
+        $('.image-caption', this).slideToggle('slow');
+      });
+    }  
   });
 })(jQuery);
