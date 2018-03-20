@@ -3,11 +3,6 @@
 
 Realizar un plugin que permita mostrar el atributo `alt` de la imagen al hacer el efecto _hover_.
 
-
-Link del [Demo](https://natalyoc.github.io/cardify/public/index.html) 
-
-* Así se visualiza la imagen al pasar el mouse encima de la figura.
-
-![imagen1](public/assets/docs/ejemplo.png)
+![image](https://user-images.githubusercontent.com/32288071/37637455-eb2b472a-2bd5-11e8-95f2-918a5345b2e1.png)
 
 
